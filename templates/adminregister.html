@@ -12,7 +12,7 @@
     <title>IBM Smartinternz-build-a-thon Project on cloud</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="static/images//favicon.png" type="image/png">
+    <link rel="shortcut icon" href="static/images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="static/css/slick.css">
@@ -63,8 +63,8 @@
                     <div class="col-lg-6">
                         <div class="header-contact text-lg-left text-center">
                             <ul>
-                                <li><img src="static/images//all-icon/map.png" alt="icon"><span>VIGNAN</span></li>
-                                <li><img src="static/images//all-icon/email.png" alt="icon"><span>abc@gmail.com</span></li>
+                                <li><img src="static/images/all-icon/map.png" alt="icon"><span>VIGNAN</span></li>
+                                <li><img src="static/images/all-icon/email.png" alt="icon"><span>abc@gmail.com</span></li>
                             </ul>
                         </div>
                     </div>
@@ -149,30 +149,52 @@
                 <div class="col-lg-8">
                     <div class="contact-from">
                         <div class="section-title">
-                            <h2>Login Page</h2>
-                            <h5>Please enter your Username and Password</h5>
+                            <h2>Registration Page</h2>
+                            
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form id="login-form" action="/login1" method="post" data-toggle="validator">
+                            <form  action="/register1" method="post" data-toggle="validator">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                               <div class="col-md-12">
+                                                <div class="singel-form form-group">
+                                                    <input name="name" type="text" placeholder="Enter Name" data-error="Name is required." required="required">
+                                                    <div class="help-block with-errors"></div>
+                </div> <!-- single form -->
+            </div>                        
+            <div class="col-md-12">
                                         <div class="singel-form form-group">
                                             <input name="EMAIL" type="email" placeholder="Your email" data-error="Valid email is required." required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- single form -->
                                     </div>
+
                                     <div class="col-md-12">
                                         <div class="singel-form form-group">
-                                            <input name="PASSWORD" type="password" placeholder="Enter Password" data-error="Password is required." required="required">
+                                            <input name="Username" type="text" placeholder="Enter Username" data-error="Username is required." required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- single form -->
                                     </div>
-                                  
+                                    <div class="col-md-12">
+                                        <div class="singel-form form-group">
+                                            <input name="Password" type="password" placeholder="Enter Password" data-error="Password is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- single form -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="singel-form form-group">
+                                            <select name="role">
+                                                <option>Select Role</option>
+                                                <option value="student">Student</option>
+                                                <option value="faculty">Faculty</option>
+                                                <option value="newadmin">New Admin</option>
+                                              </select>
+                                        </div> <!-- single form -->
+                                    </div>
                          
                                     <p class="form-message"></p>
                                     <div class="col-md-12">
                                         <div class="singel-form">
-                                            <button type="submit" class="main-btn">Login</button>
+                                            <button type="submit" class="main-btn">Submit</button>
                                         </div> <!-- singel form -->
                                     </div> 
                                 </div> <!-- row -->
@@ -186,7 +208,7 @@
         </section>
 
     
-    <!--====== FOOTER PART ENDS ======-->
+    
    
     <!--====== BACK TO TOP PART START ======-->
     
@@ -238,8 +260,6 @@
     <!--====== Map js ======-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="static/js/map-script.js"></script>
-
-{{msg}}
 
 </body>
 

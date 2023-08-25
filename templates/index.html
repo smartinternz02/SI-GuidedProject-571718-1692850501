@@ -49,10 +49,8 @@
 
 <body>
    
-    <!--====== PRELOADER PART START ======-->
+
     
-    
-   
     <!--====== HEADER PART START ======-->
     
     <header id="header-part">
@@ -63,8 +61,8 @@
                     <div class="col-lg-6">
                         <div class="header-contact text-lg-left text-center">
                             <ul>
-                                <li><img src="static/images//all-icon/map.png" alt="icon"><span>VIGNAN</span></li>
-                                <li><img src="static/images//all-icon/email.png" alt="icon"><span>abc@gmail.com</span></li>
+                                <li><img src="static/images/all-icon/map.png" alt="icon"><span>VIGNAN</span></li>
+                                <li><img src="static/images/all-icon/email.png" alt="icon"><span>abc@gmail.com</span></li>
                             </ul>
                         </div>
                     </div>
@@ -77,47 +75,42 @@
             </div> <!-- container -->
         </div> <!-- header top -->
         
-        
+               
         <div class="navigation">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-md-10 col-sm-9 col-8">
                         <nav class="navbar navbar-expand-lg">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-
+                            
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
                                         <a class="active" href="/">Home</a>
-                                        
                                     </li>
 
-                                
-                                                                           
+                                                                                                           
                                     <li class="nav-item">
-                                        <a href="/contact">Contact</a>
-                                      
+                                        <a href="/contact" target="_blank">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav> <!-- nav -->
                     </div>
+                    
                     <div class="col-lg-2 col-md-2 col-sm-3 col-4">
                         <div class="right-icon text-right">
                             <ul>
                                 <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
-                                                            </ul>
+                            </ul>
                         </div> <!-- right icon -->
                     </div>
+                
                 </div> <!-- row -->
             </div> <!-- container -->
         </div>
         
     </header>
+    
     <!--====== HEADER PART ENDS ======-->
    
     <!--====== SEARCH BOX PART START ======-->
@@ -137,67 +130,77 @@
     
     <!--====== SEARCH BOX PART ENDS ======-->
    
-    <!--====== PAGE BANNER PART START ======-->
+    <!--====== SLIDER PART START ======-->
     
+    <section id="slider-part" class="slider-active">
+       
+        
+ <!-- single slider -->
+        
+        <div class="single-slider bg_cover pt-150" style="background-image: url(static/images//slider/s-3.jpg)" data-overlay="4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="slider-cont">
+                            <h1 data-animation="bounceInLeft" data-delay="1s">Welcome</h1>
+                            <div class="row category-slied mt-40">
+                                
+                                <div class="col-lg-6">
+                                    <a href="/login">
+                                        <span class="singel-category text-center color-1">
+                                          
+                                            <span class="cont">
+                                                <span>Student Login</span>
+                                            </span>
+                                        </span> <!-- singel category -->
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <a href="/login">
+                                        <span class="singel-category text-center color-2">
+                                          
+                                            <span class="cont">
+                                                <span>Professor Login</span>
+                                            </span>
+                                        </span> <!-- singel category -->
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <a href="/login" target="_blank">
+                                        <span class="singel-category text-center color-3">
+                                         
+                                            <span class="cont">
+                                                <span>Admin Login</span>
+                                            </span>
+                                        </span> <!-- singel category -->
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- single slider -->
+    </section>
     
-    
-    <!--====== CONTACT PART START ======-->
-    
-    <section id="contact-page" class="pt-90 pb-120 gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-from">
-                        <div class="section-title">
-                            <h2>Login Page</h2>
-                            <h5>Please enter your Username and Password</h5>
-                        </div> <!-- section title -->
-                        <div class="main-form pt-45">
-                            <form id="login-form" action="/login1" method="post" data-toggle="validator">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="singel-form form-group">
-                                            <input name="EMAIL" type="email" placeholder="Your email" data-error="Valid email is required." required="required">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- single form -->
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="singel-form form-group">
-                                            <input name="PASSWORD" type="password" placeholder="Enter Password" data-error="Password is required." required="required">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- single form -->
-                                    </div>
-                                  
-                         
-                                    <p class="form-message"></p>
-                                    <div class="col-md-12">
-                                        <div class="singel-form">
-                                            <button type="submit" class="main-btn">Login</button>
-                                        </div> <!-- singel form -->
-                                    </div> 
-                                </div> <!-- row -->
-                            </form>
-                        </div> <!-- main form -->
-                    </div> <!--  contact from -->
-                </div>
-                
-        </div> <!-- container -->
-        </div>
-        </section>
-
-    
-    <!--====== FOOTER PART ENDS ======-->
+    <!--====== SLIDER PART ENDS ======-->
    
-    <!--====== BACK TO TOP PART START ======-->
+    
+    
+    
+   
+   
+ 
+   
+    <!--====== BACK TO TP PART START ======-->
     
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     
-    <!--====== BACK TO TOP PART ENDS ======-->
-    
-    
-    
-    
-    
+    <!--====== BACK TO TP PART ENDS ======-->
+   
     
     
     <!--====== jquery js ======-->
@@ -239,8 +242,5 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="static/js/map-script.js"></script>
 
-{{msg}}
-
 </body>
-
 </html>

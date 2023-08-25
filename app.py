@@ -98,7 +98,7 @@ def register1():
     USERNAME=x[2]
     PASSWORD=x[3]
     ROLE=x[4]
-    sql = "SELECT * FROM REGISTER WHERE EMAIL =?"
+    sql = "SELECT * FROM ADMINREGISTER WHERE EMAIL =?"
     stmt = ibm_db.prepare(conn, sql)
     ibm_db.bind_param(stmt,1,EMAIL)
     ibm_db.execute(stmt)
